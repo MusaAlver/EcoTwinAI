@@ -8,6 +8,14 @@ It combines energy forecasting, adaptive uncertainty estimation, anomaly detecti
 
 ---
 
+## Engineering Decisions
+
+The main technical decisions, rejected approaches, trade-offs and implementation choices are documented separately:
+
+👉 [Read the Engineering Decisions](docs/engineering-decisions.md)
+
+---
+
 ## System Overview
 
 ```text
