@@ -36,6 +36,75 @@ Docker
 
 ---
 
+## Dataset & Data Preparation
+
+The dataset used in EcoTwin AI was obtained from Kaggle:
+
+**Building 59 Operational Performance Dataset**
+
+https://www.kaggle.com/datasets/gideonkipkorir/building-operational-performance
+
+The dataset contains building operational measurements including whole-building
+energy consumption, subsystem-level loads and environmental variables.
+
+The downloaded dataset package also included supporting files such as:
+
+```text
+Building59_Vlog.zip
+description_table_3year_clean_data.xlsx
+metadata_Drayad_Bl9d59.docx
+README_Dryad_Bl9d59.txt
+```
+
+The raw dataset is not included in this repository. It can be obtained from
+the Kaggle source above.
+
+### Data Preparation
+
+The original building data was inspected and processed before model training.
+The preparation stage included:
+
+- identifying the building and environmental signals used by the project
+- organizing the measurements chronologically
+- preparing the time-series structure at 15-minute intervals
+- combining relevant HVAC and building-energy variables
+- deriving historical power features
+- creating time-based features for the forecasting model
+
+Examples of derived variables include:
+
+```text
+power_lag_15m
+power_lag_60m
+power_lag_24h
+power_lag_7d
+
+power_delta_15m
+power_delta_60m
+
+time_sin
+time_cos
+dow_sin
+dow_cos
+is_weekend
+```
+
+After preparation, the production forecasting model uses **23 input features**
+covering building power, HVAC, MELS, lighting, indoor/outdoor conditions,
+historical power behavior and temporal context.
+
+Each prediction uses:
+
+```text
+16 timesteps × 23 features
+15-minute sampling
+≈ 4 hours of historical context
+```
+
+The time-series observations were kept in chronological order during model
+development rather than randomly shuffling future and past observations.
+
+---
 ## Energy Forecasting
 
 EcoTwin AI uses a **Gated Residual LSTM** for 30-minute-ahead energy forecasting.
