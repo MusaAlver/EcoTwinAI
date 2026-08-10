@@ -1,0 +1,2 @@
+project,test_observations,alarm_points,alarm_rate_percent,independent_incidents,incident_reduction_percent,critical_incidents,strong_attribution_rate_percent,forecast_30m_mae_kw,forecast_30m_rmse_kw,forecast_30m_10kw_hit_rate,anomaly_benchmark_f1,root_cause_benchmark_accuracy,evaluation_note
+EcoTwin AI,13223,886,6.7,602,32.05,54,84.79,2.776,4.426,95.58,78.62,89.75,Anomaly and root-cause classification metrics use controlled semi-synthetic benchmark anomalies.

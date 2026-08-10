@@ -1,0 +1,8 @@
+[
+  "total_power",
+  "indoor_temp_avg",
+  "outdoor_temp_avg",
+  "relative_humidity_set_1",
+  "solar_radiation_set_1",
+  "dew_point_temperature_set_1d"
+]

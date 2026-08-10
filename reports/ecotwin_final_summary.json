@@ -1,0 +1,16 @@
+{
+    "project": "EcoTwin AI",
+    "test_observations": 13223,
+    "alarm_points": 886,
+    "alarm_rate_percent": 6.7,
+    "independent_incidents": 602,
+    "incident_reduction_percent": 32.05,
+    "critical_incidents": 54,
+    "strong_attribution_rate_percent": 84.79,
+    "forecast_30m_mae_kw": 2.776,
+    "forecast_30m_rmse_kw": 4.426,
+    "forecast_30m_10kw_hit_rate": 95.58,
+    "anomaly_benchmark_f1": 78.62,
+    "root_cause_benchmark_accuracy": 89.75,
+    "evaluation_note": "Anomaly and root-cause classification metrics use controlled semi-synthetic benchmark anomalies."
+}

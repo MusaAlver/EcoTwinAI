@@ -1,0 +1,138 @@
+====================================================================================================
+DOSYA: elec.csv
+DURUM: DOSYA BULUNAMADI
+
+====================================================================================================
+DOSYA: occ.csv
+YOL: /Users/muhammedmusaalver/Documents/EcoTwinAI/data/raw/building59/Bldg59_clean data/occ.csv
+BOYUT: 11.12 MB
+SÜTUN SAYISI: 3
+SÜTUNLAR:
+  - date
+  - occ_third_south
+  - occ_fourth_south
+
+İLK 5 KAYIT:
+               date  occ_third_south  occ_fourth_south
+2018-05-22 07:00:00              0.0               0.0
+2018-05-22 07:01:00              0.0               1.0
+2018-05-22 07:02:00              0.0               0.0
+2018-05-22 07:03:00              0.0               1.0
+2018-05-22 07:04:00              0.0               0.0
+
+====================================================================================================
+DOSYA: wifi.csv
+YOL: /Users/muhammedmusaalver/Documents/EcoTwinAI/data/raw/building59/Bldg59_clean data/wifi.csv
+BOYUT: 2.61 MB
+SÜTUN SAYISI: 5
+SÜTUNLAR:
+  - date
+  - wifi_first_south
+  - wifi_second_south
+  - wifi_third_south
+  - wifi_fourth_south
+
+İLK 5 KAYIT:
+           date  wifi_first_south  wifi_second_south  wifi_third_south  wifi_fourth_south
+2018/5/22 00:00               NaN                NaN                38                 26
+2018/5/22 00:10               NaN                NaN                37                 26
+2018/5/22 00:20               NaN                NaN                37                 28
+2018/5/22 00:30               NaN                NaN                36                 27
+2018/5/22 00:40               NaN                NaN                36                 28
+
+====================================================================================================
+DOSYA: zone_co2.csv
+YOL: /Users/muhammedmusaalver/Documents/EcoTwinAI/data/raw/building59/Bldg59_clean data/zone_co2.csv
+BOYUT: 37.22 MB
+SÜTUN SAYISI: 12
+SÜTUNLAR:
+  - date
+  - zone_022_co2
+  - zone_028_co2
+  - zone_033_co2
+  - zone_040_co2
+  - zone_044_co2
+  - zone_045_co2
+  - zone_052_co2
+  - zone_058_co2
+  - zone_062_co2
+  - zone_068_co2
+  - zone_072_co2
+
+İLK 5 KAYIT:
+           date  zone_022_co2  zone_028_co2  zone_033_co2  zone_040_co2  zone_044_co2  zone_045_co2  zone_052_co2  zone_058_co2  zone_062_co2  zone_068_co2  zone_072_co2
+2019/8/19 01:33           410           416           428           410           397           423           415           405           415           419           408
+2019/8/19 01:34           410           418           421           411           406           420           408           405           417           412           412
+2019/8/19 01:35           408           429           424           418           409           424           431           414           415           410           416
+2019/8/19 01:36           413           414           426           416           407           418           436           414           423           409           417
+2019/8/19 01:37           418           404           437           407           412           416           424           409           419           410           408
+
+====================================================================================================
+DOSYA: zone_temp_interior.csv
+YOL: /Users/muhammedmusaalver/Documents/EcoTwinAI/data/raw/building59/Bldg59_clean data/zone_temp_interior.csv
+BOYUT: 31.13 MB
+SÜTUN SAYISI: 17
+SÜTUNLAR:
+  - date
+  - cerc_templogger_1
+  - cerc_templogger_10
+  - cerc_templogger_11
+  - cerc_templogger_12
+  - cerc_templogger_13
+  - cerc_templogger_14
+  - cerc_templogger_15
+  - cerc_templogger_16
+  - cerc_templogger_2
+  - cerc_templogger_3
+  - cerc_templogger_4
+  - cerc_templogger_5
+  - cerc_templogger_6
+  - cerc_templogger_7
+  - cerc_templogger_8
+  - cerc_templogger_9
+
+İLK 5 KAYIT:
+               date  cerc_templogger_1  cerc_templogger_10  cerc_templogger_11  cerc_templogger_12  cerc_templogger_13  cerc_templogger_14  cerc_templogger_15  cerc_templogger_16  cerc_templogger_2  cerc_templogger_3  cerc_templogger_4  cerc_templogger_5  cerc_templogger_6  cerc_templogger_7  cerc_templogger_8  cerc_templogger_9
+2018-02-22 00:30:00             22.875              22.062              23.312              21.250              21.812              22.687              23.500              22.062             23.375             24.062             23.500             23.125             23.562             22.312             22.375             22.625
+2018-02-22 00:40:00             22.937              22.750              23.375              21.937              21.812              22.687              23.500              21.937             23.125             24.000             23.562             22.875             23.750             22.500             22.500             22.687
+2018-02-22 00:50:00             22.937              22.875              23.312              22.312              21.875              22.812              23.562              21.937             23.125             24.250             23.500             23.000             23.625             22.375             22.500             22.687
+2018-02-22 01:00:00             22.937              23.000              23.375              22.375              21.812              22.812              23.125              21.750             23.375             24.187             23.500             23.062             24.000             22.437             22.375             22.875
+2018-02-22 01:10:00             23.000              23.000              23.312              22.437              21.812              22.937              23.187              21.937             23.875             24.187             23.500             23.125             24.062             22.437             22.687             22.875
+
+====================================================================================================
+DOSYA: site_weather.csv
+YOL: /Users/muhammedmusaalver/Documents/EcoTwinAI/data/raw/building59/Bldg59_clean data/site_weather.csv
+BOYUT: 5.07 MB
+SÜTUN SAYISI: 6
+SÜTUNLAR:
+  - date
+  - air_temp_set_1
+  - air_temp_set_2
+  - dew_point_temperature_set_1d
+  - relative_humidity_set_1
+  - solar_radiation_set_1
+
+İLK 5 KAYIT:
+               date  air_temp_set_1  air_temp_set_2  dew_point_temperature_set_1d  relative_humidity_set_1  solar_radiation_set_1
+2018-01-01 00:00:00           11.64           11.51                          8.10                    79.07                  86.70
+2018-01-01 00:15:00           11.49           11.42                          8.14                    80.10                  45.88
+2018-01-01 00:30:00           11.59           11.51                          8.21                    79.92                  51.62
+2018-01-01 00:45:00           11.44           11.41                          8.11                    80.20                  21.43
+2018-01-01 01:00:00           11.12           11.15                          8.04                    81.50                   6.45
+
+====================================================================================================
+DOSYA: ashp_meter.csv
+YOL: /Users/muhammedmusaalver/Documents/EcoTwinAI/data/raw/building59/Bldg59_clean data/ashp_meter.csv
+BOYUT: 1.43 MB
+SÜTUN SAYISI: 2
+SÜTUNLAR:
+  - date
+  - aru_001_power_mbtuph
+
+İLK 5 KAYIT:
+               date  aru_001_power_mbtuph
+2020-08-01 07:05:00              8.614244
+2020-08-01 07:10:00             84.440384
+2020-08-01 07:15:00             46.838456
+2020-08-01 07:20:00              9.236529
+2020-08-01 07:25:00              6.373049

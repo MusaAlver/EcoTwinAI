@@ -1,0 +1,25 @@
+{
+    "project": "EcoTwin AI",
+    "version": "1.0.0",
+    "method": "adaptive_conformal_forecast_residual",
+    "coverage": 0.96,
+    "rolling_window_days": 30,
+    "forecast_horizon_minutes": 30,
+    "error_update": "delayed_until_forecast_outcome",
+    "history_update": "min(error, threshold_used)",
+    "anomaly_rule": "absolute_error > adaptive_threshold",
+    "anomaly_score": "absolute_error / adaptive_threshold",
+    "reference_evaluation": {
+        "test_observations": 13223,
+        "alarm_points": 886,
+        "reference_alarm_rate_percent": 6.7,
+        "median_threshold_kw": 8.2684,
+        "mean_threshold_kw": 8.1761
+    },
+    "controlled_semi_synthetic_benchmark": {
+        "precision_percent": 91.92,
+        "recall_percent": 68.68,
+        "f1_percent": 78.62
+    },
+    "benchmark_note": "Classification metrics are from a controlled semi-synthetic anomaly benchmark and are not real-world fault-label accuracy."
+}

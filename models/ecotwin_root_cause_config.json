@@ -1,0 +1,25 @@
+{
+    "project": "EcoTwin AI",
+    "version": "1.0.0",
+    "window_days": 28,
+    "components": [
+        "hvac_N",
+        "hvac_S",
+        "mels_N",
+        "mels_S",
+        "lig_S"
+    ],
+    "expected_behavior": "same weekday/weekend + hour + minute slot",
+    "statistics": "median + MAD",
+    "mad_scale_factor": 1.4826,
+    "minimum_scale_kw": 0.25,
+    "local_scale_floor_ratio": 0.2,
+    "unexplained_min_component_kw": 0.75,
+    "unexplained_total_error_ratio": 0.1,
+    "controlled_semi_synthetic_benchmark": {
+        "injected_anomaly_detection_rate_percent": 76.85,
+        "root_cause_accuracy_detected_percent": 89.75,
+        "end_to_end_accuracy_percent": 68.97
+    },
+    "benchmark_note": "Root-cause benchmark uses controlled semi-synthetic positive subsystem anomalies."
+}

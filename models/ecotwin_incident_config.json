@@ -1,0 +1,22 @@
+{
+    "project": "EcoTwin AI",
+    "version": "1.0.0",
+    "engine": "incident_engine_v2",
+    "max_alarm_gap_minutes": 30,
+    "observation_interval_minutes": 15,
+    "new_incident_conditions": [
+        "alarm gap > 30 minutes",
+        "consumption direction changes"
+    ],
+    "dominant_cause_method": "weighted anomaly score and attribution strength",
+    "duration_method": "end_time - start_time + 15 minute observation interval",
+    "reference_results": {
+        "alarm_points": 886,
+        "incidents": 602,
+        "alarm_to_incident_reduction_percent": 32.05,
+        "warning_incidents": 332,
+        "high_incidents": 216,
+        "critical_incidents": 54,
+        "strong_attribution_rate_percent": 84.79
+    }
+}

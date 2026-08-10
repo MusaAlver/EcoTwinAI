@@ -1,0 +1,3 @@
+Horizon,Persistence_MAE,Persistence_RMSE,LSTM_MAE,LSTM_RMSE
+30 dakika,2.82,4.561,3.795,5.386
+60 dakika,3.469,5.702,4.331,6.306

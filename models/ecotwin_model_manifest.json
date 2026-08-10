@@ -1,0 +1,46 @@
+{
+    "project": "EcoTwin AI",
+    "release": "v1.0.0",
+    "production_forecast": "30-minute gated residual LSTM",
+    "input_shape": [
+        16,
+        23
+    ],
+    "output_shape": [
+        1
+    ],
+    "parameters": 24641,
+    "features": [
+        "total_power",
+        "hvac_N",
+        "hvac_S",
+        "hvac_total",
+        "mels_N",
+        "mels_S",
+        "lig_S",
+        "indoor_temp_avg",
+        "outdoor_temp_avg",
+        "relative_humidity_set_1",
+        "solar_radiation_set_1",
+        "dew_point_temperature_set_1d",
+        "power_lag_15m",
+        "power_lag_60m",
+        "power_lag_24h",
+        "power_lag_7d",
+        "power_delta_15m",
+        "power_delta_60m",
+        "time_sin",
+        "time_cos",
+        "dow_sin",
+        "dow_cos",
+        "is_weekend"
+    ],
+    "gate_lambda": 0.42,
+    "artifacts_sha256": {
+        "ecotwin_30m_residual_lstm.keras": "6c7a7dce0c950ff547283f8237c5f379ddbc25591670ad6e250a1c0886a9a0bd",
+        "ecotwin_30m_x_scaler.pkl": "0775b803af7463c94d1f86029070f55b1ce2e968d4ec2c0addfe5da0a5e334d5",
+        "ecotwin_30m_residual_scaler.pkl": "4a95a76ae8b821c4a7d44bca6c40f5655b6fee8b1cdae90e72b62d9e3326825a",
+        "ecotwin_30m_features.json": "36370d9ec87864edaa22501188d7b115b1f8e08dc621bec443dc1a8b83422c30",
+        "ecotwin_forecast_config.json": "edf6d9d952095b3c3bf437d8dea09541832ed6c901b81382df76b47d89ddbf82"
+    }
+}

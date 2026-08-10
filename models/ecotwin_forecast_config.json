@@ -1,0 +1,32 @@
+{
+    "project": "EcoTwin AI",
+    "version": "1.0.0",
+    "forecast_30m": {
+        "method": "gated_residual_lstm",
+        "horizon_minutes": 30,
+        "sampling_interval_minutes": 15,
+        "history_timesteps": 16,
+        "history_hours": 4,
+        "feature_count": 23,
+        "gate_lambda": 0.42,
+        "baseline": "persistence",
+        "formula": "forecast = persistence + gate_lambda * predicted_residual",
+        "model_file": "ecotwin_30m_residual_lstm.keras",
+        "x_scaler_file": "ecotwin_30m_x_scaler.pkl",
+        "residual_scaler_file": "ecotwin_30m_residual_scaler.pkl",
+        "features_file": "ecotwin_30m_features.json"
+    },
+    "forecast_60m": {
+        "method": "persistence",
+        "horizon_minutes": 60,
+        "reason": "Persistence retained because gated AI did not improve final MAE."
+    },
+    "final_evaluation": {
+        "test_observations": 13223,
+        "forecast_30m_mae_kw": 2.776,
+        "forecast_30m_rmse_kw": 4.426,
+        "forecast_30m_within_5kw_percent": 84.63,
+        "forecast_30m_within_10kw_percent": 95.58,
+        "forecast_60m_mae_kw": 3.457
+    }
+}

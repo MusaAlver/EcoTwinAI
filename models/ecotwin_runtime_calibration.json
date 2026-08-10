@@ -1,0 +1,11 @@
+{
+    "project": "EcoTwin AI",
+    "artifact": "production_runtime_calibration",
+    "forecast_horizon_minutes": 30,
+    "uncertainty_window_days": 30,
+    "root_cause_window_days": 28,
+    "production_start": "2020-08-16T05:30:00",
+    "calibration_forecast_points": 13222,
+    "component_history_points": 13222,
+    "component_count": 5
+}
