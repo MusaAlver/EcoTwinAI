@@ -35,9 +35,6 @@ class EcoTwinIncidentEngine:
         )
 
 
-    # ========================================================
-    # VALIDATION
-    # ========================================================
 
     @staticmethod
     def _validate_columns(df):
@@ -68,9 +65,6 @@ class EcoTwinIncidentEngine:
             )
 
 
-    # ========================================================
-    # DOMINANT ROOT CAUSE
-    # ========================================================
 
     @staticmethod
     def dominant_incident_cause(
@@ -133,9 +127,6 @@ class EcoTwinIncidentEngine:
         )
 
 
-    # ========================================================
-    # BUILD INCIDENTS
-    # ========================================================
 
     def build(
         self,
@@ -156,9 +147,6 @@ class EcoTwinIncidentEngine:
             alarm_df
         )
 
-        # ----------------------------------------
-        # Empty input
-        # ----------------------------------------
 
         if len(alarm_df) == 0:
 
@@ -187,9 +175,6 @@ class EcoTwinIncidentEngine:
             ]
         )
 
-        # ----------------------------------------
-        # Attribution strength
-        # ----------------------------------------
 
         if (
             "attribution_strength"
@@ -209,9 +194,6 @@ class EcoTwinIncidentEngine:
             errors="coerce"
         )
 
-        # ----------------------------------------
-        # Deviation direction
-        # ----------------------------------------
 
         if (
             "deviation_direction"
@@ -239,9 +221,6 @@ class EcoTwinIncidentEngine:
             )
         )
 
-        # ----------------------------------------
-        # Severity rank
-        # ----------------------------------------
 
         incident_source[
             "severity_rank"
@@ -256,9 +235,6 @@ class EcoTwinIncidentEngine:
             .astype(int)
         )
 
-        # ----------------------------------------
-        # Incident boundaries
-        # ----------------------------------------
 
         time_gap = (
             incident_source[
@@ -300,9 +276,6 @@ class EcoTwinIncidentEngine:
             .astype(int)
         )
 
-        # ----------------------------------------
-        # Incident summaries
-        # ----------------------------------------
 
         incident_rows = []
 
@@ -496,9 +469,6 @@ class EcoTwinIncidentEngine:
         )
 
 
-    # ========================================================
-    # SUMMARY
-    # ========================================================
 
     @staticmethod
     def summarize(

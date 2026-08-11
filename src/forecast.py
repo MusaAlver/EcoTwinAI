@@ -33,9 +33,6 @@ class EcoTwinForecaster:
             / "models"
         )
 
-        # ----------------------------------------
-        # Artifact paths
-        # ----------------------------------------
 
         self.model_path = (
             self.model_dir
@@ -62,9 +59,6 @@ class EcoTwinForecaster:
             / "ecotwin_forecast_config.json"
         )
 
-        # ----------------------------------------
-        # Load artifacts
-        # ----------------------------------------
 
         self.model = (
             tf.keras.models.load_model(
@@ -97,9 +91,6 @@ class EcoTwinForecaster:
 
             self.config = json.load(f)
 
-        # ----------------------------------------
-        # Production contract
-        # ----------------------------------------
 
         forecast_cfg = (
             self.config["forecast_30m"]
@@ -132,9 +123,6 @@ class EcoTwinForecaster:
         self._validate_artifacts()
 
 
-    # ========================================================
-    # ARTIFACT VALIDATION
-    # ========================================================
 
     def _validate_artifacts(self):
 
@@ -178,9 +166,6 @@ class EcoTwinForecaster:
             )
 
 
-    # ========================================================
-    # INPUT VALIDATION
-    # ========================================================
 
     def _prepare_window(
         self,
@@ -233,9 +218,6 @@ class EcoTwinForecaster:
         ]
 
 
-    # ========================================================
-    # 30-MINUTE FORECAST
-    # ========================================================
 
     def predict_30m(
         self,
@@ -271,9 +253,6 @@ class EcoTwinForecaster:
             )
         )
 
-        # ----------------------------------------
-        # Persistence baseline
-        # ----------------------------------------
 
         if persistence_kw is None:
 
@@ -290,9 +269,6 @@ class EcoTwinForecaster:
                 persistence_kw
             )
 
-        # ----------------------------------------
-        # LSTM residual prediction
-        # ----------------------------------------
 
         scaled_residual = (
             self.model.predict(
@@ -309,9 +285,6 @@ class EcoTwinForecaster:
             .reshape(-1)[0]
         )
 
-        # ----------------------------------------
-        # Gated final forecast
-        # ----------------------------------------
 
         correction_kw = (
             self.gate_lambda

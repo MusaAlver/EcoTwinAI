@@ -43,9 +43,6 @@ def load_production_engine(
     )
 
 
-    # ========================================================
-    # RESTORE TIMESTAMPS
-    # ========================================================
 
     calibration_dates = pd.to_datetime(
         data[
@@ -71,9 +68,6 @@ def load_production_engine(
     )
 
 
-    # ========================================================
-    # ENGINE
-    # ========================================================
 
     engine = EcoTwinEngine(
         project_root

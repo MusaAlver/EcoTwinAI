@@ -59,9 +59,6 @@ class EcoTwinEngine:
             / "models"
         )
 
-        # ====================================================
-        # FORECAST
-        # ====================================================
 
         self.forecaster = (
             EcoTwinForecaster(
@@ -85,9 +82,6 @@ class EcoTwinEngine:
             for name in COMPONENTS
         ]
 
-        # ====================================================
-        # CONFIG
-        # ====================================================
 
         anomaly_config = self._load_json(
             "ecotwin_anomaly_config.json",
@@ -115,9 +109,6 @@ class EcoTwinEngine:
             },
         )
 
-        # ====================================================
-        # ENGINES
-        # ====================================================
 
         self.uncertainty = (
             AdaptiveConformalThreshold(
@@ -197,9 +188,6 @@ class EcoTwinEngine:
             )
         )
 
-        # ====================================================
-        # RUNTIME STATE
-        # ====================================================
 
         self.pending_forecasts = {}
 
@@ -208,9 +196,6 @@ class EcoTwinEngine:
         self.initialized = False
 
 
-    # ========================================================
-    # JSON HELPER
-    # ========================================================
 
     def _load_json(
         self,
@@ -235,9 +220,6 @@ class EcoTwinEngine:
             return json.load(f)
 
 
-    # ========================================================
-    # INITIAL CALIBRATION
-    # ========================================================
 
     def initialize(
         self,
@@ -306,9 +288,6 @@ class EcoTwinEngine:
         }
 
 
-    # ========================================================
-    # CREATE 30-MIN FORECAST
-    # ========================================================
 
     def create_forecast(
         self,
@@ -422,9 +401,6 @@ class EcoTwinEngine:
         }
 
 
-    # ========================================================
-    # PROCESS REAL OUTCOME
-    # ========================================================
 
     def process_outcome(
         self,
@@ -495,9 +471,6 @@ class EcoTwinEngine:
             ]
         )
 
-        # ====================================================
-        # ANOMALY
-        # ====================================================
 
         anomaly = (
             self.anomaly_detector
@@ -553,9 +526,6 @@ class EcoTwinEngine:
         root_result = None
         recommendation_result = None
 
-        # ====================================================
-        # ROOT CAUSE + RECOMMENDATION
-        # ====================================================
 
         if anomaly[
             "is_anomaly"
@@ -727,9 +697,6 @@ class EcoTwinEngine:
         }
 
 
-    # ========================================================
-    # INCIDENTS
-    # ========================================================
 
     def build_incidents(
         self
@@ -753,9 +720,6 @@ class EcoTwinEngine:
         )
 
 
-    # ========================================================
-    # STATUS
-    # ========================================================
 
     def status(
         self

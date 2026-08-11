@@ -67,9 +67,6 @@ class EcoTwinRootCauseEngine:
         self.initialized = False
 
 
-    # ========================================================
-    # TIME SLOT
-    # ========================================================
 
     @staticmethod
     def slot_key(date):
@@ -87,9 +84,6 @@ class EcoTwinRootCauseEngine:
         )
 
 
-    # ========================================================
-    # INITIAL CALIBRATION
-    # ========================================================
 
     def initialize(
         self,
@@ -140,9 +134,7 @@ class EcoTwinRootCauseEngine:
             )
         )
 
-        # ----------------------------------------------------
         # Global robust fallback
-        # ----------------------------------------------------
 
         self.global_median = np.nanmedian(
             component_values,
@@ -167,9 +159,7 @@ class EcoTwinRootCauseEngine:
             self.minimum_scale,
         )
 
-        # ----------------------------------------------------
         # Last 28 days → slot history
-        # ----------------------------------------------------
 
         self.slot_history.clear()
 
@@ -200,9 +190,6 @@ class EcoTwinRootCauseEngine:
         self.initialized = True
 
 
-    # ========================================================
-    # EXPECTED SUBSYSTEM STATE
-    # ========================================================
 
     def expected_state(
         self,
@@ -243,9 +230,7 @@ class EcoTwinRootCauseEngine:
 
             history.popleft()
 
-        # ----------------------------------------------------
         # Local robust expectation
-        # ----------------------------------------------------
 
         if len(history) >= 3:
 
@@ -302,9 +287,6 @@ class EcoTwinRootCauseEngine:
         )
 
 
-    # ========================================================
-    # ADD REAL BUILDING STATE
-    # ========================================================
 
     def observe(
         self,
@@ -352,9 +334,6 @@ class EcoTwinRootCauseEngine:
         )
 
 
-    # ========================================================
-    # ROOT CAUSE DIAGNOSIS
-    # ========================================================
 
     def diagnose(
         self,
@@ -453,9 +432,7 @@ class EcoTwinRootCauseEngine:
             total_error_kw
         )
 
-        # ----------------------------------------------------
         # No monitored subsystem sufficiently explains event
-        # ----------------------------------------------------
 
         if (
             total_score <= 1e-8
@@ -540,9 +517,6 @@ class EcoTwinRootCauseEngine:
         }
 
 
-    # ========================================================
-    # COMPLETE REAL-TIME STEP
-    # ========================================================
 
     def evaluate(
         self,

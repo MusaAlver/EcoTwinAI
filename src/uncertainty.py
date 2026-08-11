@@ -36,9 +36,6 @@ class AdaptiveConformalThreshold:
         self.initialized = False
 
 
-    # ========================================================
-    # CONFORMAL QUANTILE
-    # ========================================================
 
     @staticmethod
     def conformal_quantile(
@@ -84,9 +81,6 @@ class AdaptiveConformalThreshold:
         )
 
 
-    # ========================================================
-    # INITIAL CALIBRATION
-    # ========================================================
 
     def initialize(
         self,
@@ -173,9 +167,6 @@ class AdaptiveConformalThreshold:
         )
 
 
-    # ========================================================
-    # HISTORY MAINTENANCE
-    # ========================================================
 
     def _prune_history(
         self,
@@ -243,9 +234,6 @@ class AdaptiveConformalThreshold:
             )
 
 
-    # ========================================================
-    # THRESHOLD
-    # ========================================================
 
     def current_threshold(
         self,
@@ -280,9 +268,6 @@ class AdaptiveConformalThreshold:
         )
 
 
-    # ========================================================
-    # REGISTER FORECAST OUTCOME
-    # ========================================================
 
     def register_error(
         self,
