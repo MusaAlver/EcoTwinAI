@@ -17,6 +17,7 @@ COPY src/ ./src/
 
 # Model + scaler + config + calibration artifact'ları
 COPY models/ ./models/
+COPY config/ ./config/
 
 EXPOSE 8000
 
