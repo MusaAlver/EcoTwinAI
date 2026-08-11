@@ -1,0 +1,191 @@
+{
+  "contract_version": "1.0",
+  "minimum_training_contract": {
+    "required": [
+      "timestamp",
+      "total_power"
+    ]
+  },
+  "canonical_signals": {
+    "timestamp": {
+      "type": "datetime",
+      "unit": null,
+      "required": true,
+      "aliases": [
+        "timestamp",
+        "datetime",
+        "date_time",
+        "time",
+        "date"
+      ]
+    },
+    "total_power": {
+      "type": "numeric",
+      "unit": "kW",
+      "required": true,
+      "aliases": [
+        "total_power",
+        "power",
+        "building_power",
+        "total_kw",
+        "electricity",
+        "energy_consumption"
+      ]
+    },
+    "hvac_N": {
+      "type": "numeric",
+      "unit": "kW",
+      "required": false,
+      "group": "hvac",
+      "aliases": [
+        "hvac_n",
+        "hvac_north",
+        "north_hvac"
+      ]
+    },
+    "hvac_S": {
+      "type": "numeric",
+      "unit": "kW",
+      "required": false,
+      "group": "hvac",
+      "aliases": [
+        "hvac_s",
+        "hvac_south",
+        "south_hvac"
+      ]
+    },
+    "mels_N": {
+      "type": "numeric",
+      "unit": "kW",
+      "required": false,
+      "group": "mels",
+      "aliases": [
+        "mels_n",
+        "mels_north"
+      ]
+    },
+    "mels_S": {
+      "type": "numeric",
+      "unit": "kW",
+      "required": false,
+      "group": "mels",
+      "aliases": [
+        "mels_s",
+        "mels_south"
+      ]
+    },
+    "lig_S": {
+      "type": "numeric",
+      "unit": "kW",
+      "required": false,
+      "group": "lighting",
+      "aliases": [
+        "lig_s",
+        "lighting",
+        "lighting_south",
+        "lights"
+      ]
+    },
+    "indoor_temp_avg": {
+      "type": "numeric",
+      "unit": "celsius",
+      "required": false,
+      "group": "environment",
+      "aliases": [
+        "indoor_temp",
+        "inside_temperature",
+        "room_temperature"
+      ]
+    },
+    "outdoor_temp_avg": {
+      "type": "numeric",
+      "unit": "celsius",
+      "required": false,
+      "group": "environment",
+      "aliases": [
+        "outdoor_temp",
+        "outside_temperature",
+        "weather_temperature"
+      ]
+    },
+    "relative_humidity_set_1": {
+      "type": "numeric",
+      "unit": "percent",
+      "required": false,
+      "group": "environment",
+      "aliases": [
+        "relative_humidity",
+        "humidity",
+        "rh"
+      ]
+    },
+    "solar_radiation_set_1": {
+      "type": "numeric",
+      "unit": "W/m2",
+      "required": false,
+      "group": "environment",
+      "aliases": [
+        "solar_radiation",
+        "solar",
+        "irradiance"
+      ]
+    },
+    "dew_point_temperature_set_1d": {
+      "type": "numeric",
+      "unit": "celsius",
+      "required": false,
+      "group": "environment",
+      "aliases": [
+        "dew_point",
+        "dew_point_temperature"
+      ]
+    }
+  },
+  "derived_features": [
+    "hvac_total",
+    "power_lag_15m",
+    "power_lag_60m",
+    "power_lag_24h",
+    "power_lag_7d",
+    "power_delta_15m",
+    "power_delta_60m",
+    "time_sin",
+    "time_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend"
+  ],
+  "capabilities": {
+    "forecast_training": {
+      "minimum": [
+        "timestamp",
+        "total_power"
+      ]
+    },
+    "subsystem_root_cause": {
+      "recommended": [
+        "hvac_N",
+        "hvac_S",
+        "mels_N",
+        "mels_S",
+        "lig_S"
+      ]
+    },
+    "environment_context": {
+      "recommended": [
+        "indoor_temp_avg",
+        "outdoor_temp_avg",
+        "relative_humidity_set_1",
+        "solar_radiation_set_1",
+        "dew_point_temperature_set_1d"
+      ]
+    }
+  },
+  "existing_building59_model": {
+    "requires_full_feature_contract": true,
+    "model_input_shape": [
+      16,
+      23
+    ]
+  }
+}
