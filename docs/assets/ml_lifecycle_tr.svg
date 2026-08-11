@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1296" viewBox="0 0 1600 1296">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06101a"/><stop offset="1" stop-color="#0a2030"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#16d8c0"/><stop offset="1" stop-color="#6dde91"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="9" flood-opacity="0.25"/></filter>
+</defs>
+<rect width="100%" height="100%" rx="26" fill="url(#bg)"/>
+<text x="64" y="68" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="700" fill="#f2f7f9">EcoTwin AI — ML Yaşam Döngüsü</text>
+<text x="64" y="108" font-family="Inter,Arial,sans-serif" font-size="21" fill="#9bb2bf">Anlamsal veri kabulünden doğrulanmış ve yeniden yüklenebilir model artifact’larına</text>
+<rect x="64" y="130" width="1472" height="3" rx="2" fill="url(#accent)"/>
+<rect x="70" y="158" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="169" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="194" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">1</text>
+<text x="150" y="194" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Ham Bina Verisi</text>
+<text x="520" y="194" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">CSV / Parquet telemetrisi</text>
+<rect x="1295" y="171" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="193" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">GİRDİ</text><path d="M800 217 L800 230" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 218 L800 230 L808 218" fill="#2fc8e0"/><rect x="70" y="232" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="243" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="268" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">2</text>
+<text x="150" y="268" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Onboarding + Semantics</text>
+<text x="520" y="268" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Alias çözümleme, explicit unit, total_power → kW</text>
+<rect x="1295" y="245" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="267" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">SEMANTIC SAFE</text><path d="M800 291 L800 304" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 292 L800 304 L808 292" fill="#2fc8e0"/><rect x="70" y="306" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="317" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="342" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">3</text>
+<text x="150" y="342" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Data Quality Gate</text>
+<text x="520" y="342" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Timestamp, duplicate, missingness, sampling</text>
+<rect x="1295" y="319" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="341" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">PASS / WARN / FAIL</text><path d="M800 365 L800 378" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 366 L800 378 L808 366" fill="#2fc8e0"/><rect x="70" y="380" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="391" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="416" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">4</text>
+<text x="150" y="416" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Preprocessing + Profil</text>
+<text x="520" y="416" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Lag/delta/time features + CORE / CONTEXT / FULL</text>
+<rect x="1295" y="393" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="415" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">FEATURES</text><path d="M800 439 L800 452" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 440 L800 452 L808 440" fill="#2fc8e0"/><rect x="70" y="454" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="465" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="490" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">5</text>
+<text x="150" y="490" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Kronolojik Dataset</text>
+<text x="520" y="490" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Train / validation / test; zaman karıştırma yok</text>
+<rect x="1295" y="467" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="489" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">TIME SERIES</text><path d="M800 513 L800 526" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 514 L800 526 L808 514" fill="#2fc8e0"/><rect x="70" y="528" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="539" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="564" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">6</text>
+<text x="150" y="564" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Train-Only Scaling</text>
+<text x="520" y="564" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Feature ve residual scaler yalnızca train’de fit</text>
+<rect x="1295" y="541" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="563" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">LEAKAGE AWARE</text><path d="M800 587 L800 600" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 588 L800 600 L808 588" fill="#2fc8e0"/><rect x="70" y="602" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="613" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="638" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">7</text>
+<text x="150" y="638" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Residual LSTM</text>
+<text x="520" y="638" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Persistence üzerine residual düzeltme</text>
+<rect x="1295" y="615" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="637" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">TRAINING</text><path d="M800 661 L800 674" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 662 L800 674 L808 662" fill="#2fc8e0"/><rect x="70" y="676" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="687" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="712" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">8</text>
+<text x="150" y="712" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Baseline Değerlendirme</text>
+<text x="520" y="712" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Persistence + daily + weekly seasonal</text>
+<rect x="1295" y="689" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="711" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">FAIR BASELINES</text><path d="M800 735 L800 748" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 736 L800 748 L808 736" fill="#2fc8e0"/><rect x="70" y="750" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="761" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="786" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">9</text>
+<text x="150" y="786" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Validation Gate</text>
+<text x="520" y="786" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Model seçimi validation üzerinde</text>
+<rect x="1295" y="763" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="785" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">SELECTION</text><path d="M800 809 L800 822" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 810 L800 822 L808 810" fill="#2fc8e0"/><rect x="70" y="824" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="835" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="860" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">10</text>
+<text x="150" y="860" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Test Değerlendirmesi</text>
+<text x="520" y="860" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Gate sonrası ölçüm; promotion kriteri değil</text>
+<rect x="1295" y="837" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="859" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">NO SELECTION</text><path d="M800 883 L800 896" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 884 L800 896 L808 884" fill="#2fc8e0"/><rect x="70" y="898" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="909" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="934" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">11</text>
+<text x="150" y="934" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Model Registry</text>
+<text x="520" y="934" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Artifact bundle + SHA-256 + production pointer</text>
+<rect x="1295" y="911" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="933" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">VERSIONING</text><path d="M800 957 L800 970" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 958 L800 970 L808 958" fill="#2fc8e0"/><rect x="70" y="972" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="983" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="1008" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">12</text>
+<text x="150" y="1008" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Cold-Load Runtime</text>
+<text x="520" y="1008" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Diskten yeniden yükle + shape/fingerprint kontrolleri</text>
+<rect x="1295" y="985" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="1007" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">INFERENCE</text><path d="M800 1031 L800 1044" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 1032 L800 1044 L808 1032" fill="#2fc8e0"/><rect x="70" y="1046" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="1057" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="1082" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">13</text>
+<text x="150" y="1082" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Walk-Forward Backtest</text>
+<text x="520" y="1082" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">Expanding-window kronolojik replay</text>
+<rect x="1295" y="1059" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="1081" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">STABILITY</text><path d="M800 1105 L800 1118" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 1106 L800 1118 L808 1106" fill="#2fc8e0"/><rect x="70" y="1120" width="1460" height="58" rx="14" fill="#0c2230" stroke="#1d6075"/>
+<rect x="88" y="1131" width="38" height="36" rx="9" fill="#123e50" stroke="#2fc8e0"/>
+<text x="107" y="1156" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">14</text>
+<text x="150" y="1156" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f7f9">Model Health</text>
+<text x="520" y="1156" font-family="Inter,Arial,sans-serif" font-size="16" fill="#9bb2bf">PSI + missingness + MAE degradation</text>
+<rect x="1295" y="1133" width="205" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1397" y="1155" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">RETRAIN SIGNAL</text><rect x="70" y="1216" width="1460" height="48" rx="14" fill="#0b2c24" stroke="#2bc895"/>
+<text x="800" y="1246" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="600" fill="#89e1b8">Harici görülmemiş bina validasyonu v1.0.0 kapsamında tamamlanmış değildir.</text></svg>

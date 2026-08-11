@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1008" viewBox="0 0 1600 1008">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06101a"/><stop offset="1" stop-color="#0a2030"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#16d8c0"/><stop offset="1" stop-color="#6dde91"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="9" flood-opacity="0.25"/></filter>
+</defs>
+<rect width="100%" height="100%" rx="26" fill="url(#bg)"/>
+<text x="64" y="68" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="700" fill="#f2f7f9">EcoTwin AI — Reference Operational Flow</text>
+<text x="64" y="108" font-family="Inter,Arial,sans-serif" font-size="21" fill="#9bb2bf">Building59: from forecast outcome processing to anomaly, attribution and incident management</text>
+<rect x="64" y="130" width="1472" height="3" rx="2" fill="url(#accent)"/>
+<rect x="92" y="160" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="192" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="199" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">1</text>
+<text x="170" y="188" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Create Forecast</text>
+<text x="170" y="210" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">30-minute-ahead expected total power</text>
+<rect x="1280" y="176" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="198" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">FORECAST</text><path d="M800 225 L800 240" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 228 L800 240 L808 228" fill="#2fc8e0"/><rect x="92" y="242" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="274" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="281" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">2</text>
+<text x="170" y="270" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Persist Expected State</text>
+<text x="170" y="292" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">Forecast ID, threshold, outcome time and context</text>
+<rect x="1280" y="258" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="280" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">STATE</text><path d="M800 307 L800 322" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 310 L800 322 L808 310" fill="#2fc8e0"/><rect x="92" y="324" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="356" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="363" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">3</text>
+<text x="170" y="352" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Outcome Arrives</text>
+<text x="170" y="374" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">Observed building state is matched to the earlier forecast</text>
+<rect x="1280" y="340" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="362" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">OBSERVED</text><path d="M800 389 L800 404" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 392 L800 404 L808 392" fill="#2fc8e0"/><rect x="92" y="406" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="438" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="445" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">4</text>
+<text x="170" y="434" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Adaptive Threshold</text>
+<text x="170" y="456" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">Recent forecast-error history updates the error boundary</text>
+<rect x="1280" y="422" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="444" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">UNCERTAINTY</text><path d="M800 471 L800 486" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 474 L800 486 L808 474" fill="#2fc8e0"/><rect x="92" y="488" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="520" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="527" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">5</text>
+<text x="170" y="516" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Anomaly Decision</text>
+<text x="170" y="538" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">|forecast error| &gt; adaptive threshold</text>
+<rect x="1280" y="504" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="526" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">DETECTION</text><path d="M800 553 L800 568" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 556 L800 568 L808 556" fill="#2fc8e0"/><rect x="92" y="570" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="602" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="609" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">6</text>
+<text x="170" y="598" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Root-Cause Attribution</text>
+<text x="170" y="620" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">HVAC N/S, MELS N/S, Lighting or unexplained load</text>
+<rect x="1280" y="586" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="608" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">ATTRIBUTION</text><path d="M800 635 L800 650" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 638 L800 650 L808 638" fill="#2fc8e0"/><rect x="92" y="652" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="684" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="691" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">7</text>
+<text x="170" y="680" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Severity + Recommendation</text>
+<text x="170" y="702" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">Rule-based operator decision support</text>
+<rect x="1280" y="668" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="690" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">ACTION</text><path d="M800 717 L800 732" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 720 L800 732 L808 720" fill="#2fc8e0"/><rect x="92" y="734" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="766" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="773" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">8</text>
+<text x="170" y="762" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">Incident Grouping</text>
+<text x="170" y="784" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">Consolidate related alarm points into incidents</text>
+<rect x="1280" y="750" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="772" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">INCIDENT</text><path d="M800 799 L800 814" stroke="#2fc8e0" stroke-width="4" fill="none"/>
+<path d="M792 802 L800 814 L808 802" fill="#2fc8e0"/><rect x="92" y="816" width="1416" height="64" rx="15" fill="#0c2230" stroke="#1d6075"/>
+<circle cx="128" cy="848" r="20" fill="#123e50" stroke="#2fc8e0"/>
+<text x="128" y="855" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f2f7f9">9</text>
+<text x="170" y="844" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#f2f7f9">FastAPI Output</text>
+<text x="170" y="866" font-family="Inter,Arial,sans-serif" font-size="15" fill="#9bb2bf">Health, status, forecast, outcome and incidents</text>
+<rect x="1280" y="832" width="200" height="32" rx="16" fill="#0b322c" stroke="#2bc895"/>
+<text x="1380" y="854" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#79e6bd">SERVING</text><rect x="92" y="918" width="1416" height="54" rx="15" fill="#0b2c24" stroke="#2bc895"/>
+<text x="800" y="951" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="600" fill="#89e1b8">Attribution Strength is not a calibrated probability. Anomaly/root-cause benchmark metrics belong to controlled semi-synthetic tests.</text></svg>
