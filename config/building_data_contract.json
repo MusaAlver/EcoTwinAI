@@ -1,5 +1,5 @@
 {
-  "contract_version": "1.0",
+  "contract_version": "1.1",
   "minimum_training_contract": {
     "required": [
       "timestamp",
@@ -27,10 +27,32 @@
         "total_power",
         "power",
         "building_power",
-        "total_kw",
-        "electricity",
-        "energy_consumption"
-      ]
+        "total_kw"
+      ],
+      "quantity": "power",
+      "unit_policy": {
+        "requires_explicit_unit": true,
+        "canonical_unit": "kW",
+        "accepted_power_units": {
+          "W": 0.001,
+          "kW": 1.0,
+          "MW": 1000.0
+        },
+        "accepted_energy_units": [
+          "Wh",
+          "kWh",
+          "MWh"
+        ],
+        "energy_to_power": {
+          "allowed": true,
+          "requires_interval_minutes": true,
+          "requires_meter_semantics": true,
+          "supported_meter_semantics": [
+            "interval_energy",
+            "cumulative_energy"
+          ]
+        }
+      }
     },
     "hvac_N": {
       "type": "numeric",
@@ -187,5 +209,12 @@
       16,
       23
     ]
+  },
+  "semantic_safety": {
+    "unit_inference_policy": "explicit_or_confirmed",
+    "ambiguous_alias_policy": "require_confirmation",
+    "allow_silent_energy_to_power_conversion": false,
+    "allow_silent_cumulative_meter_conversion": false,
+    "canonical_power_unit": "kW"
   }
 }

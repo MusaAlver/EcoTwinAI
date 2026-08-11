@@ -44,7 +44,7 @@ def test_minimum_training_contract():
     df = pd.DataFrame(
         {
             "datetime": make_timestamp(),
-            "electricity": [
+            "building_power": [
                 30.1,
                 31.2,
                 30.8,
@@ -129,3 +129,34 @@ def test_full_signal_contract():
         ["compatible"]
         is True
     )
+
+
+
+def test_ambiguous_electricity_alias_is_not_silently_mapped():
+    df = pd.DataFrame(
+        {
+            "datetime": make_timestamp(),
+            "electricity": [
+                30.1,
+                31.2,
+                30.8,
+                32.0,
+                33.1,
+                34.0,
+                33.6,
+                35.2,
+            ],
+        }
+    )
+
+    onboarding = BuildingDataOnboarding()
+
+    mapping = onboarding.match_columns(df)
+
+    assert "timestamp" in mapping
+    assert "total_power" not in mapping
+
+    report = onboarding.inspect_dataframe(df)
+
+    assert "total_power" in report["missing_required"]
+    assert report["compatibility_status"] == "NO"

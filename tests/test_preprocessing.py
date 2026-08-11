@@ -182,7 +182,7 @@ def test_prepare_returns_report():
                 periods=8,
                 freq="15min",
             ),
-            "electricity": np.arange(
+            "building_power": np.arange(
                 20.0,
                 28.0,
             ),
@@ -204,7 +204,7 @@ def test_prepare_returns_report():
 
     assert (
         report["column_mapping"]["total_power"]
-        == "electricity"
+        == "building_power"
     )
 
     assert "power_lag_15m" in result.columns
